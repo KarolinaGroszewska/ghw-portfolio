@@ -74,6 +74,7 @@ span.highlight {
     flex-wrap: wrap;
 }
 
+
 .project {
     border: 1px solid var(--primary-color);
     border-radius: 8px;
@@ -100,11 +101,17 @@ span.highlight {
     z-index: 10;
 }
 
-/* .nav a {
-    border-radius: 999px;
+.nav a {
     color: var(--text-color);
     font-size: 0.9rem;
     font-weight: bold;
-    padding: 0.5rem 1rem;
     text-decoration: none;
-} */
+}
+.nav-link:focus {
+    border-bottom: 2px solid var(--primary-color);
+    outline: none;
+}
+
+.section-header {
+    margin-bottom: 1rem;
+}
