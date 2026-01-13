@@ -42,3 +42,8 @@ function displayProjects() {
 
 document.addEventListener('DOMContentLoaded', displayProjects); 
 
+const themeToggleButton = document.getElementById('theme-toggle');
+themeToggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle('light-mode');
+});

@@ -1,5 +1,6 @@
 :root {
     --background-color: #f9f9f9;
+    --heading-color: #f9f9f9;
     --primary-color: #4f46e5;
     --text-color: #333333;
 }
@@ -25,6 +26,7 @@ body {
 
 body.dark-mode {
     --background-color: #333333;
+    --heading-color: #f9f9f9;
     --primary-color: #4f46e5;
     --text-color: #f9f9f9;
 }
@@ -32,7 +34,7 @@ body.dark-mode {
 footer {
     bottom: 0;
     background-color: var(--primary-color);
-    color: var(--background-color);
+    color: var(--heading-color);
     /* position: fixed; */
     padding: 0.5rem;
     text-align: center;
@@ -41,7 +43,7 @@ footer {
 
 header {
     background-color: var(--primary-color);
-    color: var(--background-color);
+    color: var(--heading-color);
     padding: 2rem;
     text-align: center;
 }
