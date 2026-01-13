@@ -6,7 +6,7 @@
     <title>John Doe | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-mode">
     <header>
         <h1>John Doe</h1>
         <p>Software Developer & Web Enthusiast</p>
@@ -22,12 +22,24 @@
             <div id="projects"></div>
         </section>
 
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, feel free to reach out via email at <span>yourname@email.com</span>
+            <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:yourname@email.com">yourname@email.com</a></p>
     </main>
     <footer>
         <p>&copy; 2026 Kari Groszewska</p>
+        <button id="theme-toggle">Toggle Dark/Light Mode</button>
     </footer>
     <script src="script.js"></script>
 </body>
