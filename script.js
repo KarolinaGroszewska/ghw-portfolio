@@ -100,3 +100,8 @@ themeToggleButton.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     document.body.classList.toggle('light-mode');
 });
+
+const backToTopButton = document.getElementById('back-to-top');
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});

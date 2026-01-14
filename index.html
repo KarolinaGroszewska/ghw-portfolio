@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web developer portfolio showcasing projects and skills for teaching purposes.">
+    <meta name="keywords" content="web development, portfolio, HTML, CSS, JavaScript, projects, skills">
+
     <title>John Doe | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="light-mode">
-    <header>
+    <header role ="banner">
         <h1>John Doe</h1>
         <p>Computer Science Student and Aspiring Developer</p>
     </header>
-    <nav class="nav">
+    <nav aria-label="Main navigation" class="nav">
         <a href="#about-me" class="nav-link">About Me</a> |
         <a href="#projects" class="nav-link">Projects</a> |
         <a href="#skills" class="nav-link">Skills</a> |
@@ -73,6 +76,7 @@
     <footer>
         <p>&copy; 2026 Kari Groszewska</p>
         <button id="theme-toggle">Toggle Dark/Light Mode</button>
+        <button id="back-to-top">Back to Top</button>
     </footer>
     <script src="script.js"></script>
 </body>
