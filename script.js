@@ -10,7 +10,7 @@ const projects = [
         title: "Task Manager App",
         description: "A web application to manage daily tasks and to-dos.",
         link: "#",
-        tags: ["React", "JavaScript", "LocalStorage"]
+        tags: ["React", "JavaScript"]
     },
     {
         title: "Blog Platform",
@@ -23,7 +23,7 @@ const projects = [
         description:
         "A web app that fetches real-time weather data from a public API and displays current conditions for searched cities.",
         link: "#",
-        tags: ["JavaScript", "API", "HTML", "CSS"]
+        tags: ["JavaScript", "HTML", "CSS"]
     }
 ];
 const filterButtons = document.getElementById('project-filters');
@@ -87,6 +87,27 @@ function displayProjects() {
 }
 
 document.addEventListener('DOMContentLoaded', displayProjects); 
+
+function getAllSkills(projects) {
+  const skills = new Set();
+
+  projects.forEach(project => {
+    project.tags.forEach(tag => skills.add(tag));
+  });
+
+  return [...skills];
+}
+
+const skillsListDiv = document.getElementById('skills-list');
+
+const skills = getAllSkills(projects);
+skills.forEach(skill => {
+    const skillItem = document.createElement('span');
+    skillItem.className = 'skill-item';
+    skillItem.textContent = skill;
+    skillsListDiv.appendChild(skillItem);
+});
+
 
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', function(event) {
