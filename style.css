@@ -9,6 +9,7 @@ a {
     color: var(--primary-color);
     text-decoration: none;
 }
+
 button {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -39,6 +40,26 @@ footer {
     padding: 0.5rem;
     text-align: center;
     width: 100%;
+}
+
+form { 
+    display: grid;
+    gap: 0.5rem;
+    max-width: 450px;
+    margin: auto;
+}
+
+form input, form textarea {
+    border: 1.5px solid var(--text-color);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+form button {
+    border: 1.5px solid var(--primary-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
 }
 
 header {
@@ -73,7 +94,12 @@ span.highlight {
     flex-wrap: wrap;
 }
 
-
+#project-filters button.active{
+    border: 1.5px solid var(--primary-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
 .project {
     border: 1px solid var(--primary-color);
     border-radius: 8px;

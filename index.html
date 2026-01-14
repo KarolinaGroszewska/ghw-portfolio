@@ -10,7 +10,7 @@
 <body class="light-mode">
     <header>
         <h1>John Doe</h1>
-        <p>Software Developer & Web Enthusiast</p>
+        <p>Computer Science Student and Aspiring Developer</p>
     </header>
     <nav class="nav">
         <a href="#about-me" class="nav-link">About Me</a> |
@@ -21,12 +21,20 @@
     <main>
         <section id="about-me">
             <h2>About Me</h2>
-            <p>Hello! I'm John Doe, a passionate software developer with a love for creating innovative solutions. I enjoy working on web development projects and exploring new technologies.</p>
+            <p>Hello! I'm John Doe, a computer science student who enjoys building interactive websites and learning more about how technology works behind the scenes. I am especially interested in front-end web development and creating user-friendly interfaces.</p>
+            <p>I built this portfolio to practice some of my HTML, CSS, and JavaScript skills, and to showcase some of my favorite projects.</p>
         </section>
 
         <section">
             <div class="section-header">
                 <h2>Projects</h2>
+            </div>
+            <div id="project-filters">
+                <button class="filter-button" data-filter="all">All</button>
+                <button class="filter-button" data-filter="HTML">HTML</button>
+                <button class="filter-button" data-filter="CSS">CSS</button>
+                <button class="filter-button" data-filter="JavaScript">JavaScript</button>
+                <button class="filter-button" data-filter="React">React</button>
             </div>
         </section>
         <section id="projects">
@@ -36,17 +44,31 @@
         <section id="skills">
             <h2>Skills</h2>
             <ul>
-                <li>JavaScript</li>
-                <li>HTML & CSS</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS (flexbox, responsive design)</li>
+                <li>Javascript</li>
+                <li>Git & GitHub</li>
+                <li>Introductory Web Accessibility</li>
             </ul>
         </section>
 
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:yourname@email.com">yourname@email.com</a></p>
+            <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:yourname@email.com">yourname@email.com</a> or use the form below.</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+            <h3>My Links</h3>
+            <ul>
+                <li> <a href = "#"> Github </a> </li>
+                <li> <a href = "#"> LinkedIn </a> </li>
+            </ul>
     </main>
     <footer>
         <p>&copy; 2026 Kari Groszewska</p>
